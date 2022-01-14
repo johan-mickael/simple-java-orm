@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<prop name="driver">org.postgresql.Driver</prop>
+	<prop name="url">jdbc:postgresql://localhost/courrier</prop>
+	<prop name="username">johan</prop>
+	<prop name="password">1</prop>
+</config>
