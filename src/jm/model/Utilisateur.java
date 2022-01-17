@@ -2,21 +2,21 @@ package jm.model;
 
 import java.util.Date;
 
-import jm.custom.annotation.Colonne;
-import jm.custom.annotation.Entite;
-import jm.custom.annotation.Tableau;
+import jm.custom.annotation.Column;
+import jm.custom.annotation.Entity;
+import jm.custom.annotation.Table;
 
-@Entite
-@Tableau(nom = "utilisateur")
+@Entity
+@Table(nom = "utilisateur")
 public class Utilisateur extends BaseModel {
 	
-	@Colonne(nom = "nom")
+	@Column(nom = "nom")
 	private String nom;
 	
-	@Colonne(nom = "profil")
+	@Column(nom = "profil")
 	private int profil;
 	
-	@Colonne(nom = "naissance")
+	@Column(nom = "naissance")
 	private Date naissance;
 	
 	public String getNom() {

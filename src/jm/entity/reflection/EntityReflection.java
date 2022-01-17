@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import jm.custom.annotation.AnnotationProcess;
-import jm.custom.annotation.Colonne;
+import jm.custom.annotation.Column;
 
 public class EntityReflection {
 	
@@ -16,8 +16,8 @@ public class EntityReflection {
 	
 	public static List<String> getColumnsAnnotationsNames(Object ob) {
 		List<String> columnsAnnotationsNamesList = new ArrayList<String>();
-		List<Colonne> colonnesAnnotationsList = AnnotationProcess.colonnes(ob);
-		for(Colonne colonneItem : colonnesAnnotationsList) {
+		List<Column> colonnesAnnotationsList = AnnotationProcess.colonnes(ob);
+		for(Column colonneItem : colonnesAnnotationsList) {
 			columnsAnnotationsNamesList.add(colonneItem.nom());
 		}
 		return columnsAnnotationsNamesList;
